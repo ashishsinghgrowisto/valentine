@@ -17,7 +17,7 @@ export default function Page() {
       "Think again!",
       "Last chance!",
       "Surely not?",
-      "You might regret this!",
+      "You might want to think again",
       "Give it another thought!",
       "Are you absolutely certain?",
       "This could be a mistake!",
