@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
-  const yesButtonSize = Math.min(noCount * 20 + 16, 64);
+    const yesButtonSize = noCount * 20 + 16;
 
   const handleNoClick = () => {
     setNoCount(noCount + 1);
@@ -56,7 +56,7 @@ export default function Page() {
           <div className="flex flex-wrap justify-center gap-2 items-center">
             <button
               className={`bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg mr-4`}
-              style={{ fontSize: yesButtonSize }}
+              style={{ fontSize: `min(${yesButtonSize}px, 15vw)` }}
               onClick={() => setYesPressed(true)}
             >
               Yes
