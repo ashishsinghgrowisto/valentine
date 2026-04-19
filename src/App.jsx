@@ -1,6 +1,4 @@
 import { useState } from "react";
-import lovesvg from "./assets/All You Need Is Love SVG Cut File.svg";
-import lovesvg2 from "./assets/Love In The Air SVG Cut File.svg";
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
@@ -49,19 +47,11 @@ export default function Page() {
       ) : (
         <>
           <img
-            src={lovesvg}
-            className="fixed animate-pulse top-10 md:left-24 left-6 md:w-40 w-28"
-          />
-          <img
-            src={lovesvg2}
-            className="fixed bottom-16 -z-10 animate-pulse md:right-24 right-10 md:w-40 w-32"
-          />
-          <img
             className="h-[230px] rounded-lg shadow-lg"
             src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.webp"
           />
           <h1 className="text-4xl md:text-6xl my-4 text-center">
-            Will you be my Valentine?
+            I am really sorry for today, will you forgive me?
           </h1>
           <div className="flex flex-wrap justify-center gap-2 items-center">
             <button
