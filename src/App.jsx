@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
-  const yesButtonSize = noCount * 20 + 16;
+  const yesButtonSize = Math.min(noCount * 20 + 16, 64);
 
   const handleNoClick = () => {
     setNoCount(noCount + 1);
